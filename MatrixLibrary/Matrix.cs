@@ -186,7 +186,7 @@ public class Matrix
     public Matrix Transpose()
     {
         var result = new Matrix(Width, Height);
-        ProcessFunctionOverData((i, j) => { result[i, j] = data[j, i]; });
+        ProcessFunctionOverData((i, j) => { result[j, i] = data[i, j]; });
         return result;
     }
 

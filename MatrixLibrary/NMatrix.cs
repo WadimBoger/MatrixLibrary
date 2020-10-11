@@ -262,7 +262,7 @@ public static class NMatrix
     /// <summary>
     /// Перевести одномерный массив в <see cref="string"/>.
     /// </summary>
-    public static string TranslateToString<T>(this T[] array)
+    public static string ConvertToString<T>(this T[] array)
     {
         int x = array.Length;
         string translateToString = "[";
@@ -275,7 +275,7 @@ public static class NMatrix
     /// <summary>
     /// Перевести двумерный массив в <see cref="string"/>.
     /// </summary>
-    public static string TranslateToString<T>(this T[,] array)
+    public static string ConvertToString<T>(this T[,] array)
     {
         int y = array.GetLength(0), x = array.GetLength(1);
 
